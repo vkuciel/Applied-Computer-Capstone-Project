@@ -5,8 +5,16 @@ body {
 }
 
 body {
-  background: url(web-banner-wilm-v-2.jpg) no-repeat center center fixed; 
+  background: url(web-banner-wilm-v-2.jpg) no-repeat center center fixed;
   background-size: cover;
+}
+
+
+h2 {
+    font: Helvetica;
+    text-align: center;
+    font-size: 30pt;
+    line-height: 14pt;
 }
 
 .header {
