@@ -16,9 +16,9 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Add textbooks</a>
+      <a href="addTextbook.html">Add textbooks</a>
       <a href="#">Search/Modify texbooks</a>
-      <a href="#">Current textbooks</a>
+      <a href="currentTextbooks.html">Current textbooks</a>
     </div>
   </div> 
 </div>
@@ -26,7 +26,7 @@
 		<h3>Add Textbook</h3>
 
 	<div class="container">
-		<form action="/action_page.php">
+		<form action="home.html">
 		<label for="fname">Course</label>
 		<input type="text" id="CourseNumber" name="CourseNumber" placeholder="Course number here. Example: 'CIS107'">
 
@@ -55,9 +55,18 @@
 		<textarea id="subject" name="subject" placeholder="Write comment here" style="height:200px"></textarea>
 
 		<!-- Javascript technique used here!! When user clicks button, they will be redirected with a message -->
+		<input type="submit" onclick="clicked();" value="Submit" />
+		<script type="text/javascript">
+    function clicked() {
+       if (confirm('Do you want to submit?')) {
+           window.location.href = "home.html";
+       } else {
+           return false;
+       }
+    }
 
-		<button type="submit" onclick="document.write('Your information was submitted, thank you!') "> Submit </button>
-	</form>
+</script>
+		
 	</div>
 
     </body>
