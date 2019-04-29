@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Add Textbook</title>
+        <link rel="stylesheet" type="text/css" href="styleadd.css">
+    </head>
+	
+    <body>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="login.html">Logout</a>
+  <div class="dropdown">
+    <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Add textbooks</a>
+      <a href="#">Search/Modify texbooks</a>
+      <a href="#">Current textbooks</a>
+    </div>
+  </div> 
+</div>
+
+		<h3>Add Textbook</h3>
+
+	<div class="container">
+		<form action="/action_page.php">
+		<label for="fname">Course</label>
+		<input type="text" id="CourseNumber" name="CourseNumber" placeholder="Course number here. Example: 'CIS107'">
+
+		<label for="lname">Year</label>
+		<input type="text" id="Year" name="Year" placeholder="Year here. Example '202051'">
+		
+		<label for="fname">Book Number</label>
+		<input type="text" id="Book" name="Book" placeholder="Book number here. Example: '1'">
+
+		<label for="lname">Author</label>
+		<input type="text" id="FirstAuthor" name="FirstAuthor" placeholder="Author name here">
+		
+		<label for="fname">Book Title</label>
+		<input type="text" id="BookTitle" name="BookTitle" placeholder="Book title here">
+
+		<label for="lname">Edition</label>
+		<input type="text" id="Edition" name="Edition" placeholder="Edition here">
+		
+		<label for="fname">ISBN</label>
+		<input type="text" id="FirstISBN" name="FirstISBN" placeholder="ISBN here">
+
+		<label for="lname">Publisher</label>
+		<input type="text" id="FirstPublisher" name="FirstPublisher" placeholder="Publisher name here">
+
+		<label for="subject">Comment</label>
+		<textarea id="subject" name="subject" placeholder="Write comment here" style="height:200px"></textarea>
+
+		<!-- Javascript technique used here!! When user clicks button, they will be redirected with a message -->
+
+		<button type="submit" onclick="document.write('Your information was submitted, thank you!') "> Submit </button>
+	</form>
+	</div>
+
+    </body>
+</html>

@@ -1,3 +1,8 @@
+const txtEmail = document.querySelector("#email");
+const txtPassword = document.querySelector("#password");
+const btnLogin = document.querySelector("#login");
+const btnLogout = document.querySelector("#logout");
+
 var main = function() {	
   
 	$('img').click(function() {

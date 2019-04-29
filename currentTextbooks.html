@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="currentTextbooksStyle.css">
+		<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="login.html">Logout</a>
+  <div class="dropdown">
+    <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Add textbooks</a>
+      <a href="#">Search/Modify texbooks</a>
+      <a href="currentTextbooks.html">Current textbooks</a>
+    </div>
+  </div> 
+</div>
+        <h1>Current Text Books</h1>
+
+        <div class="content">
+
+            <form id="add-book-form"></form>
+
+            <ul id="book-list"></ul>
+
+        </div>
+
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDRAq5ia_cHhGeBwG_YM2x13-7zsUm6Mzw",
+    authDomain: "csc264-finalproject.firebaseapp.com",
+    databaseURL: "https://csc264-finalproject.firebaseio.com",
+    projectId: "csc264-finalproject",
+    storageBucket: "csc264-finalproject.appspot.com",
+    messagingSenderId: "609978845114"
+  };
+  firebase.initializeApp(config);
+  const db = firebase.firestore();
+  db.settings({timestampsInSnapshots: true})
+</script>
+        <script src="CurrentText.js"></script>
+    </body>
+</html>

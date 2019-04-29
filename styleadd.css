@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font: Helvetica;
+    text-align: center;
+    font-size: 30pt;
+    line-height: 50pt;
+}
+
+h2 {
+	font: Helvetica;
+    font-size: 18pt;
+    line-height: 16pt;
+    text-align: center;
+}
+
+h3 {
+	font: Helvetica;
+    font-size: 12pt;
+    line-height: 14pt;
+    text-align: center;
+}
+
+h4 {
+	font: Helvetica;
+    font-size: 12pt;
+    line-height: 14pt;
+    text-align: left;
+}
+
+h5 {
+	font: Helvetica;
+    font-size: 10pt;
+    line-height: 1pt;
+    text-align: left;
+}
+
+#about{
+    color: #DDDDDD;
+    background-color: #060606
+}
+
+footer {
+    background-color: #060606;
+    padding: 1pt;
+    color: white;
+    clear: left;
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: green;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #666666;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #666666;
+}
+
+
+ul{
+	width: 100%;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+
+

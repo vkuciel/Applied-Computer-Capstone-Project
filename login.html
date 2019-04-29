@@ -46,9 +46,23 @@ CSC264-450 Applied Computer Capstone Project
     <script src='script.js'></script>
   </body>
   
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDRAq5ia_cHhGeBwG_YM2x13-7zsUm6Mzw",
+    authDomain: "csc264-finalproject.firebaseapp.com",
+    databaseURL: "https://csc264-finalproject.firebaseio.com",
+    projectId: "csc264-finalproject",
+    storageBucket: "csc264-finalproject.appspot.com",
+    messagingSenderId: "609978845114"
+  };
+  firebase.initializeApp(config);
+</script>
+  
    <script>
       function checkPassword(){
-       if(document.getElementById('password').value == '1234'){
+       if(document.getElementById('password').value == '123456'){
           location.href = "home.html";
          } else {
          alert('Incorrect username or password, please try again');
