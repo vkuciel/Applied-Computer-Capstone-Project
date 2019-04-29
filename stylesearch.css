@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font: Helvetica;
+  text-align: center;
+  font-size: 21pt;
+  line-height: 50pt;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.grid-item {
+}
+
+.prev, .next {
+  cursor: pointer;
+  padding: 16px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+}
+
+ul.a {
+  list-style-type: square;
+  font: Helvetica;
+  text-align: left;
+  font-size: 20pt;
+  line-height: 50pt;
+  max-width:30%;
+  margin:auto;
+  text-align:center;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: green;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

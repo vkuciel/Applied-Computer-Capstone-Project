@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<!-- 
+CSC264-450 Applied Computer Capstone Project
+-->
+
+<html>
+<head>
+<title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-firestore.js"></script>
+    <link rel='stylesheet' href='stylesearch.css'/>
+    <style type="text/css">a {text-decoration: none}</style>
+
+</head>
+<body>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="login.html">Logout</a>
+  <div class="dropdown">
+    <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="addTextbook.html">Add textbooks</a>
+      <a href="search.html">Search/Modify texbooks</a>
+      <a href="currentTextbooks">Current textbooks</a>
+    </div>
+  </div> 
+</div>
+
+<h2>Search Textbooks</h2>
+
+<div class="content">
+
+<form id="book-form">
+    <div class="row">
+        <div class="column">
+            <label for="cnamelist">Search Course: </label>
+            <select id="cnamelist" name="cnamelist">
+            </select>
+        </div>
+        <div class="column">
+            <label for="cnumber">Course ID: </label>
+            <input type="text" id="cnumber" name="cnumber">
+        </div>
+        <div class="column">
+            <label for="csemester">Semester: </label>
+            <input type="text" id="csemester" name="csemester">
+        </div>
+        <div class="column">
+                <button>Submit</button>
+            </div>
+    </div>
+</form>
+
+<div class="grid-container">
+        <div class="grid-item">Book Title</div>
+        <div class="grid-item">Course Number</div>
+        <div class="grid-item">Course Title</div>
+        <div class="grid-item">Edition</div>
+        <div class="grid-item">First Author</div>
+        <div class="grid-item">First Publisher</div>
+        <div class="grid-item">First ISBN</div>
+        <div class="grid-item">Year</div>
+    </div>
+<div class="grid-container" id="book-list">
+</div>
+
+</div>
+
+</body>
+<script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyDRAq5ia_cHhGeBwG_YM2x13-7zsUm6Mzw",
+    authDomain: "csc264-finalproject.firebaseapp.com",
+    databaseURL: "https://csc264-finalproject.firebaseio.com",
+    projectId: "csc264-finalproject",
+    storageBucket: "csc264-finalproject.appspot.com",
+    messagingSenderId: "609978845114"
+  };
+  firebase.initializeApp(config);
+  const db = firebase.firestore();
+</script>
+  <script src="search.js"></script>
+</html>
